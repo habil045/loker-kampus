@@ -24,7 +24,7 @@ include 'config/koneksi.php';
                 
                 if(isset($_SESSION['status_user']) && $_SESSION['status_user'] == "login_user"){
                     echo '<span class="navbar-text me-3 fw-bold text-dark">Halo, '.$_SESSION['nama_mhs'].' 👋</span>';
-                    
+                    echo '<a href="riwayat.php" class="btn btn-gradient rounded-pill px-4 me-2 shadow-sm"><i class="bi bi-clock-history"></i> Riwayat</a>';
                     echo '<button type="button" class="btn btn-outline-danger rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#modalLogoutUser">Logout</button>';
                 } else {
                     echo '<a href="login.php" class="btn btn-outline-primary rounded-pill px-4">Admin</a>';
